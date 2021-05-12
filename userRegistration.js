@@ -10,3 +10,10 @@ if (firstName.match(NAME_PATTERN)) {
 } else {
     console.log("Invalid FirstName");
 }
+
+let lastName = userInput.question("Enter your Last Name : ");
+if (lastName.match(NAME_PATTERN)) {
+    console.log("Valid LastName");
+} else {
+    console.log("Invalid LastName");
+}
