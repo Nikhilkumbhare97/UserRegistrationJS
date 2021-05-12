@@ -5,7 +5,7 @@ let userInput = require("readline-sync");
 const NAME_PATTERN = "^[A-Z]{1}[a-z]{2,}$";
 const EMAIL_PATTERN = "^[A-Za-z0-9+-]+(\\.[A-Za-z0-9-]+)*@+[A-Za-z0-9-]+(\\.[A-Za-z0-9]{2,}){1,2}$";
 const PHONE_NUMBER_PATTERN = "^[0-9]{2}[ ][0-9]{10}$";
-const PASSWORD_PATTERN = "^[A-za-z0-9.!#$%&]{8,}$";
+const PASSWORD_PATTERN = "(?=.*[A-Z]).{8,}";
 
 let firstName = userInput.question("Enter your First Name : ");
 if (firstName.match(NAME_PATTERN)) {
